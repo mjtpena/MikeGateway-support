@@ -158,7 +158,7 @@
             <h2 id="changes-pc-title">Changes it makes to your PC</h2>
             <ul>
               <li><strong>Start at sign-in.</strong> MikeGateway is registered to start when you sign in: its tray icon appears, with no window, and starts the background host. You can turn this off in the app's Settings, or in Windows Settings under Apps, then Startup.</li>
-              <li><strong>Notifications.</strong> Consent prompts are shown as Windows notifications. A prompt shows the app's name, its publisher or file path, and the model it asked for.</li>
+              <li><strong>Prompts and notifications.</strong> A consent prompt is a small window of MikeGateway itself. It shows the app's name, its publisher or file path, and the model it asked for. Windows notifications are used only to tell you that an app was blocked or that a token budget ran out, and you can turn both off in Settings.</li>
               <li><strong>Port takeover (off by default).</strong> If you turn it on, the app sets the <code>OLLAMA_HOST</code> environment variable for your Windows account to <code>127.0.0.1:11435</code>, restarts Ollama and listens on port 11434 itself. It saves the previous value and puts it back when you turn port takeover off or quit MikeGateway. It also puts it back when the gateway shuts down normally, for example at sign-out, unless you chose in Settings to keep runtimes blocked while the gateway is stopped. If the app is removed or stops unexpectedly while port takeover is on, the variable can be left behind. The <a href="support.html#undo-port-takeover">support page</a> explains how to reset it by hand.</li>
             </ul>
           </section>

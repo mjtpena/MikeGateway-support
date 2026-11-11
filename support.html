@@ -155,7 +155,7 @@ curl.exe http://127.0.0.1:11500/v1/models</code></pre>
 
             <details>
               <summary>What are per-app API keys for?</summary>
-              <p>A script run by <code>python.exe</code> looks much like any other script run by <code>python.exe</code>. If you want one script to have its own rule and limits, create a key for that rule on the Apps tab and have the script send it as its API key. Keys start with <code>lgw_</code>. A key is shown once, when you create it. The app keeps only a hash of it.</p>
+              <p>A script run by <code>python.exe</code> looks much like any other script run by <code>python.exe</code>. If you want one script to have its own rule and limits, create a key for that rule on the Apps tab and have the script send it as its API key. Keys start with <code>mgw_</code>. A key is shown once, when you create it. The app keeps only a hash of it.</p>
             </details>
 
             <details>
@@ -176,7 +176,7 @@ curl.exe http://127.0.0.1:11500/v1/models</code></pre>
 
             <h3>I did not see a consent prompt</h3>
             <ul>
-              <li>Prompts arrive as Windows notifications. Check that notifications are turned on for MikeGateway in Windows Settings, under System, then Notifications, and that Do not disturb is off.</li>
+              <li>The prompt is a small MikeGateway window near the notification area, on top of your other windows. It does not depend on Windows notifications, so Do not disturb does not hide it. If none appears, check that MikeGateway is running and that the app really sends its requests to the gateway's address.</li>
               <li>If a prompt timed out, the same app is not asked again for one minute. Wait, then try again.</li>
               <li>If the app already has a rule, there is no prompt: the rule decides. Look for the app on the Apps tab.</li>
             </ul>
